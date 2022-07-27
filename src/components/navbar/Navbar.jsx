@@ -1,6 +1,11 @@
+// Componentes
 import React from "react";
-import "./Navbar.css";
+
+// Utils
 import { IMG_LOGO_URL } from "../../constants";
+
+// Styles
+import "./Navbar.css";
 
 const Navbar = () => {
   return (

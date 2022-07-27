@@ -1,11 +1,12 @@
+// Componentes
 import React from 'react';
-import './StatsPokemon.css';
 
+// Styles
+import './StatsPokemon.css';
 
 const StatsPokemon = ({stats}) => {
 
-    return (
-        
+    return (        
         <>
             <table className="table-wrapper">
                 <thead>
@@ -23,7 +24,7 @@ const StatsPokemon = ({stats}) => {
                 </tbody>
             </table>
         </>
-      );
+    );
 }
 
 export default StatsPokemon;

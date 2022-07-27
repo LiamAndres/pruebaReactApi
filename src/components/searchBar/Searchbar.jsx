@@ -1,7 +1,6 @@
-import StatsPokemon from '../statsPokemon/StatsPokemon';
-
 // Componentes
 import React, {useState} from 'react';
+import StatsPokemon from '../statsPokemon/StatsPokemon';
 
 // Utils
 import { searchPokemon } from '../../api';
@@ -10,12 +9,11 @@ import { searchPokemon } from '../../api';
 import './Searchbar.css';
 
 const Error = ({msg}) => {
-    return(
-    <div>
-        {msg}
-    </div>
- )}
-
+        return(
+        <div>
+            {msg}
+        </div>
+    )}
 
 const Searchbar = (props) => {
     
@@ -65,8 +63,7 @@ const Searchbar = (props) => {
 
     const onClick = async (evento) =>{
         getPokemons(input)
-    }
-    
+    }    
 
     return (
         <div>
@@ -85,12 +82,9 @@ const Searchbar = (props) => {
                     {
                     areErrors ?
                     <Error msg={errorMsg} /> :
-
-                    <>
-                    
+                    <>                    
                     <StatsPokemon stats={pokeStats} />
                     <img src={pokeSprites} alt="PokeApi" className="navbar-image"/>
-
                     </>
                     }
                 </div>
