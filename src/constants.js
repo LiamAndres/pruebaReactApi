@@ -1,0 +1,1 @@
+export const IMG_LOGO_URL = "https://raw.githubusercontent.com/PokeAPI/media/master/logo/pokeapi_256.png";
