@@ -15,7 +15,7 @@ const Error = ({msg}) => {
         </div>
     )}
 
-const Searchbar = (props) => {
+const Searchbar = () => {
     
     const [input, setInput] = useState("");
     const [pokeSprites, setPokeSprites] = useState({});
@@ -61,7 +61,7 @@ const Searchbar = (props) => {
         setInput (evento.target.value);
     }
 
-    const onClick = async (evento) =>{
+    const onClick = async () =>{
         getPokemons(input)
     }    
 
